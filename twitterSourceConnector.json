@@ -1,0 +1,18 @@
+{
+ "name": "twitter_source_connector",
+ "config": {
+   "connector.class": "com.github.jcustenborder.kafka.connect.twitter.TwitterSourceConnector",
+   "twitter.oauth.accessToken": "YOUR_TOKEN",
+   "twitter.oauth.consumerSecret": "SECRET_KEY",
+   "twitter.oauth.consumerKey": "CONSUMER_KEY",
+   "twitter.oauth.accessTokenSecret": "ACCESS_TOKEN_SECRET",
+   "kafka.delete.topic": "twitter_delete",
+   "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+   "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+   "value.converter.schemas.enable": false,
+   "key.converter.schemas.enable": false,
+   "kafka.status.topic": "twitter",
+   "process.deletes": true,
+   "filter.keywords": "wildcats, villanova university"
+ }
+}
