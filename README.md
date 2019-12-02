@@ -24,6 +24,14 @@ We are using the best tools and practices that are known today. At the end of th
   docker-compose exec broker kafka-console-consumer --bootstrap-server localhost:29092 --topic twitter
   ```
   
+  -  Create a maven project in java to stream data from kafka to spark and transform and store it into memSQl Database.
+  https://github.com/milanashik/DataStreamingWithKafkaAndSpark/wiki/Week7-8-Spark#maven-project
+  
+  Sample code can be found in github and here:
+  https://github.com/milanashik/DataStreamingWithKafkaAndSpark/wiki/Week9-10-Data-Streaming#from-spark-to-memsql
+  
+  - Install Metabase (alternative to Tableau):
+  https://github.com/milanashik/DataStreamingWithKafkaAndSpark/wiki/Week11-BI-Tool
   
   
   
